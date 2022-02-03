@@ -1,0 +1,1 @@
+insert into response(id, status, acquirer_order_id, acquirer_timestamp, issuer_order_id, issuer_timestamp, from_id) values(0, 'SUCCESS', 1, '2028-11-11 00:00:00', 1, '2028-11-11', 1)
