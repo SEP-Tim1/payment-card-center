@@ -35,7 +35,7 @@ public class PccService {
 
     public PCCResponseDTO transfer(PCCRequestDTO dto) {
         requestRepository.save(new Request(dto));
-        String bankId = dto.getPanNumber().substring(1,6);
+        String bankId = dto.getPanNumber().substring(0,5);
         PCCResponseDTO response;
         if(bankId.equals(BANK1_NUMBER)){
             try {

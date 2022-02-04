@@ -8,6 +8,6 @@ import sep.paymentcardcenter.dtos.PCCResponseDTO;
 
 @FeignClient(url= "${bank2.url}", name = "second-bank")
 public interface Bank2Client {
-        @PostMapping("receiveRequestFromPCC")
+        @PostMapping("account/receiveRequestFromPCC")
         PCCResponseDTO sendToBank2(@RequestBody PCCRequestDTO dto);
 }

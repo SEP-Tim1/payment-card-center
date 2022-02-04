@@ -10,6 +10,6 @@ import java.net.URI;
 
 @FeignClient(url= "${bank1.url}", name = "first-bank")
 public interface Bank1Client {
-        @PostMapping("receiveRequestFromPCC")
+        @PostMapping("account/receiveRequestFromPCC")
         PCCResponseDTO sendToBank1(@RequestBody PCCRequestDTO dto);
 }
